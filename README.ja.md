@@ -23,7 +23,7 @@ nothing.nvim は、コードを「無（nothing）」に染める Neovim プラ�
 ### Lazy.nvim
 ```lua
 {
-    "T-b-t-Nchos/nothing.nvim",
+    "T-b-t-nchos/nothing.nvim",
     lazy = false,
     priority = 1000,
     config = function()

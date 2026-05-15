@@ -25,7 +25,7 @@ nothing.nvim is a Neovim plugin that nothing colors your code.
 ### Lazy.nvim
 ```lua
 {
-    "T-b-t-Nchos/nothing.nvim",
+    "T-b-t-nchos/nothing.nvim",
     lazy = false,
     priority = 1000,
     config = function()
