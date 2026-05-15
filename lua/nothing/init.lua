@@ -16,7 +16,9 @@ local function apply_lualine()
 
     vim.schedule(function()
         local ok, lualine = pcall(require, "lualine")
-        if not ok then return end
+        if not ok then
+            return
+        end
 
         local config = lualine.get_config() or {}
         config.options = config.options or {}
