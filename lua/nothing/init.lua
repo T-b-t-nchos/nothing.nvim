@@ -41,7 +41,7 @@ function M.setup(user_options)
 
     local options = M.options
 
-    M.colors = require("nothing.colors").setup(options).colors;
+    M.colors = require("nothing.colors").setup(options).colors
 
     M.meta = M.options
 
