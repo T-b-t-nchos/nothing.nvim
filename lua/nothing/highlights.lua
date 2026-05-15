@@ -20,12 +20,7 @@ function M.apply(c, opts)
         end
 
         -- user custom merge
-        hl = utils.merge_highlights(
-            hl,
-            opts.custom_highlights,
-            c,
-            opts
-        )
+        hl = utils.merge_highlights(hl, opts.custom_highlights, c, opts)
 
         return hl
     end
