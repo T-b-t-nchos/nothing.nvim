@@ -25,10 +25,10 @@ function M.apply(c, opts)
         return hl
     end
 
-    vim.api.nvim_create_autocmd({
-        "ColorScheme",
-        "User",
-    }, {
+    local group = vim.api.nvim_create_augroup("nothing_highlights", { clear = true })
+    vim.api.nvim_create_autocmd("ColorScheme", {
+        group = group,
+        pattern = "nothing",
         callback = function()
             vim.schedule(function()
                 utils.apply_hl(getandmerge())
