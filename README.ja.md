@@ -4,7 +4,7 @@
 </div>
 
 ## 概要
-nothing.nvim は、コードを「無（nothing）」に染める Neovim プラグインです。
+nothing.nvim は、コードを「無（nothing）」に染める Neovim プラグインです。  
 <sub>このプラグインはジョークであり、実用を目的としたものではありません。</sub>
 
 ## 機能
