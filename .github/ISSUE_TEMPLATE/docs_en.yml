@@ -1,0 +1,20 @@
+name: 📗 Documentation Issue (English)
+description: Report a documentation issue
+title: "[Docs] "
+labels: ["documentation"]
+
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page / Section
+      description: URL or file path, and heading where the problem exists
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Description
+    validations:
+      required: true

@@ -1,0 +1,20 @@
+name: 📗 ドキュメントの問題 (日本語)
+description: ドキュメントの誤りや不足
+title: "[Docs] "
+labels: ["documentation"]
+
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 対象ページ / セクション
+      description: URL、ファイルパスと、見出し名を記入してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: 内容
+    validations:
+      required: true
