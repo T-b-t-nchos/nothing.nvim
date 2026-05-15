@@ -1,6 +1,6 @@
 local palette = {
     bg = "#000000",
-    fg = "#000000"
+    fg = "#000000",
 }
 
 local M = {}
@@ -14,7 +14,7 @@ function M.setup(opts)
     end
 
     return {
-        colors = c
+        colors = c,
     }
 end
 

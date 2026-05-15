@@ -25,6 +25,6 @@ return {
         a = { fg = colors.fg, bg = colors.bg },
         b = { fg = colors.fg, bg = colors.bg },
         c = { fg = colors.fg, bg = colors.bg },
-    }
+    },
 }
 
