@@ -14,15 +14,17 @@ function M.apply(c, opts)
     }
 
     local function getandmerge()
+        local merged = {}
+
         -- get all highlight groups
         for _, name in ipairs(vim.fn.getcompletion("", "highlight")) do
-            hl[name] = base
+            merged[name] = base
         end
 
         -- user custom merge
-        hl = utils.merge_highlights(hl, opts.custom_highlights, c, opts)
+        merged = utils.merge_highlights(merged, opts.custom_highlights, c, opts)
 
-        return hl
+        return merged
     end
 
     local group = vim.api.nvim_create_augroup("nothing_highlights", { clear = true })
